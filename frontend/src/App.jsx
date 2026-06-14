@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 
-import Products from "./pages/Products";
-import Cart from "./pages/Cart";
-import Orders from "./pages/Orders";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Products from "./pages/products";
+import Cart from "./pages/cart";
+import Orders from "./pages/orders";
+import Login from "./pages/login";
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Products />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<products />} />
+        <Route path="/cart" element={<cart />} />
+        <Route path="/orders" element={<orders />} />
+        <Route path="/login" element={<login />} />
+        <Route path="/register" element={<register />} />
       </Routes>
     </>
   );
