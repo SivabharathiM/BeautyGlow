@@ -12,7 +12,7 @@ function Cart() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await API.get("/cart", {
+      const res = await API.get("/Cart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -28,7 +28,7 @@ function Cart() {
     try {
       const token = localStorage.getItem("token");
 
-      await API.delete("/cart/clear", {
+      await API.delete("/Cart/clear", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const res = await API.post(
-        "/orders/place",
+        "/Orders/place",
         {},
         {
           headers: {
