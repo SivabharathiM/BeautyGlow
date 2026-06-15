@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.jsx";
 
-import Products from "./pages/Products";
-import Cart from "./pages/Cart";
-import Orders from "./pages/Orders";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Products from "./pages/Products.jsx";
+import Cart from "./pages/Cart.jsx";
+import Orders from "./pages/Orders.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 
 function App() {
   return (
