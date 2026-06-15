@@ -9,7 +9,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await API.post("/auth/Login", {
+      const res = await API.post("/auth/login", {
         email,
         password,
       });

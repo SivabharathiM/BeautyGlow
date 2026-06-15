@@ -16,11 +16,11 @@ function Register() {
     e.preventDefault();
 
     try {
-      await API.post("/auth/Register", form);
+      await API.post("/auth/register", form);
 
       alert("Registration Successful");
 
-      navigate("/Login");
+      navigate("/login");
     } catch (error) {
       alert("Registration Failed");
     }
