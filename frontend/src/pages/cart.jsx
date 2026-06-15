@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../services/Api";
+import API from "../services/api";
 
 function Cart() {
   const [cart, setCart] = useState(null);
@@ -12,7 +12,7 @@ function Cart() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await API.get("/Cart", {
+      const res = await API.get("/cart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -28,7 +28,7 @@ function Cart() {
     try {
       const token = localStorage.getItem("token");
 
-      await API.delete("/Cart/clear", {
+      await API.delete("/cart/clear", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const res = await API.post(
-        "/Orders/place",
+        "/orders/place",
         {},
         {
           headers: {

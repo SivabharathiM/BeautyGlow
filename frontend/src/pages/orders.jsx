@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../services/Api";
+import API from "../services/api";
 
 function Orders() {
   const [orders, setOrders] = useState([]);
@@ -15,7 +15,7 @@ const fetchOrders = async () => {
     const decoded = JSON.parse(atob(token.split(".")[1]));
     console.log("FRONTEND USER ID:", decoded.id);
 
-    const res = await API.get("/Orders", {
+    const res = await API.get("/orders", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
