@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../services/api";
+import API from "../services/Api";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -10,7 +10,7 @@ function Products() {
 
   const fetchProducts = async () => {
     try {
-      const res = await API.get("/products");
+      const res = await API.get("/Products");
       setProducts(res.data);
     } catch (error) {
       console.log(error);
@@ -22,7 +22,7 @@ function Products() {
       const token = localStorage.getItem("token");
 
       await API.post(
-        "/cart/add",
+        "/Cart/add",
         {
           productId,
           quantity: 1,

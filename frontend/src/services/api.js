@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://mybeautygloww.onrender.com/api",
+  baseURL: "https://mybeautygloww.onrender.com/API",
 });
 
 export default API;

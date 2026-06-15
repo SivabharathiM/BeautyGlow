@@ -1,5 +1,5 @@
 import { useState } from "react";
-import API from "../services/api";
+import API from "../services/Api";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -9,7 +9,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await API.post("/auth/login", {
+      const res = await API.post("/auth/Login", {
         email,
         password,
       });
